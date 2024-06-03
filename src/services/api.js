@@ -6,7 +6,7 @@ const baseURL = "https://api.themoviedb.org/3";
 const defaultParams = {
   api_key: API_KEY,
   language: "en-US",
-  // imageUrl: "https://image.tmdb.org/t/p/w500",
+  
 };
 
 const instance = axios.create({
