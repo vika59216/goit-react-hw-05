@@ -34,39 +34,9 @@ export const useDetailsSearch = () => {
     fetchMovieDetails();
   }, [movieId]);
 
-  useEffect(() => {
-    if (!movieId) return;
-    async function fetchMovieCast() {
-      setLoading(true);
-      try {
-        const movieCast = await fetchMovieCastById(movieId);
-        setMovieCast(movieCast);
-      } catch (error) {
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    }
+ 
+   
 
-    fetchMovieCast();
-  }, [movieId]);
-
-  useEffect(() => {
-    async function fetchMovieReviews() {
-      if (!movieId) return;
-      setLoading(true);
-      try {
-        const movieReviews = await fetchMovieReviewsById(movieId);
-        setMovieReviews(movieReviews);
-      } catch (error) {
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchMovieReviews();
-  }, [movieId]);
 
   return {
     movieData,
