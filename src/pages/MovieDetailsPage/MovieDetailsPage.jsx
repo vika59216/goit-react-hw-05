@@ -66,4 +66,4 @@ const MovieDetailsPage = () => {
   );
 };
 
-export default MovieDetailsPag
+export default MovieDetailsPage
