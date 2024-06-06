@@ -3,7 +3,7 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
 import css from "./MovieCast.module.css";
 
-const MovieCast = () => {
+const  MovieReviews = () => {
   const { loading, error, imageUrl, movieCast, defaultImg } =
     useDetailsSearch();
 
