@@ -40,8 +40,7 @@ export const useDetailsSearch = () => {
 
   return {
     movieData,
-    movieCast,
-    movieReviews,
+  
     loading,
     error,
     imageUrl,

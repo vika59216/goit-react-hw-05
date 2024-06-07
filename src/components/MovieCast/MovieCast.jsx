@@ -1,11 +1,13 @@
+import { useEffect } from "preact/hooks";
 import { useDetailsSearch } from "../../hooks/useDetailsSearch";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
 import css from "./MovieCast.module.css";
+import { useMovieCast } from "../../hooks/useMovieCast";
 
-const  MovieReviews = () => {
+const  MovieCast = () => {
   const { loading, error, imageUrl, movieCast, defaultImg } =
-    useDetailsSearch();
+    useMovieCast();
 
   return (
     <>
